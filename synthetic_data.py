@@ -48,7 +48,7 @@ ALL_BINARY_FEATURES: List[str] = CHANNEL_FEATURES + PAGE_FEATURES + DEVICE_FEATU
 
 
 # --- Propensity scores (1–10 scale) -----------------------------------------
-# These encode your "propensity to convert" intuition per feature. Some
+# These encode the "propensity to convert" intuition per feature. Some
 # features have a range (e.g., 5–7) to allow small variation per run.
 
 FEATURE_PROPENSITY_RANGES: Dict[str, Tuple[float, float]] = {
@@ -182,7 +182,7 @@ def _build_logistic_spec(
 ) -> LogisticSpec:
     """
     Build a random-but-sensible logistic model specification based on
-    your 1–10 propensity scores.
+    the 1–10 propensity scores.
     """
     scores = _sample_feature_scores(rng)
 
