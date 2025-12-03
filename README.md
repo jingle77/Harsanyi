@@ -2,7 +2,7 @@
 
 This repo contains a Streamlit app for analyzing **interaction effects** between ecommerce behaviors using **Harsanyi dividends**.
 
-The app is designed for **page-journey stakeholders** (product, UX, marketing) who want to understand how combinations of channels, pages, and devices relate to conversion — beyond simple single-feature lift.
+The app is designed for **page-journey stakeholders** (product, UX, marketing) who want to understand how combinations of channels, pages, and devices relate to conversion 
 
 ---
 
@@ -79,27 +79,37 @@ Each run of the synthetic generator:
 
 ---
 
-## Harsanyi dividends (math in plain language)
+## Harsanyi dividends
 
 Let the user select a set of **binary features** as players (e.g. pages, channels, device flags).
 
-### Coalition value v(S)
-
+### Coalition value: v(S)
 For any **coalition** S (subset of these features), define the **coalition value**:
-
-```text
 v(S) = mean(converted | all features in S are 1)
 
----
+### Harsanyi Dividend: Dividend(S)
+Δ(S) = sum over all T ⊆ S of [ (-1)^(|S| - |T|) * v(T) ]
 
+---
 ## Running the app
 
 ### 1. Environment
 
-Dependencies are specified in `requirements.txt`, roughly:
+Dependencies are specified in `requirements.txt`:
 
 ```txt
 streamlit
 pandas
 numpy
 scipy
+```
+
+Install Dependencies:
+```bash
+pip install -r requirements.txt
+```
+Run the application in Streamlit:
+```bash
+streamlit run app.py
+```
+
