@@ -1,7 +1,5 @@
 # Harsanyi Dividend Explorer for Ecommerce Journeys
 
-![Alt text](harsanyi_gif.mp4)
-
 This repo contains a Streamlit app for analyzing **interaction effects** between ecommerce behaviors using **Harsanyi dividends**.
 
 The app is designed for **page-journey stakeholders** (product, UX, marketing) who want to understand how combinations of channels, pages, and devices relate to conversion 
