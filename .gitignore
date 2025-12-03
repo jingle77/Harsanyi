@@ -1,0 +1,11 @@
+# Python cache / compiled files
+__pycache__/
+
+# Virtual environments
+.venv/
+
+# Data
+data/
+
+# Exports (if you write results here)
+exports/
